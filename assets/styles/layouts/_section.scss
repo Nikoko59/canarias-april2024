@@ -1,0 +1,844 @@
+.content{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction : column ;  
+    min-height: 800px;
+
+    h2{ 
+        font-family:  $font2;
+        font-size : 3rem ; 
+        font-weight: 500;
+        color : $color2; 
+        text-shadow: 2px 2px 3px black;
+
+    }
+
+    #ic1{
+        font-size : 5rem ; 
+        margin: 20px;
+        color : $color3; 
+
+    }
+    p{
+      margin: 20px;
+      color : $white ; 
+      line-height: 1.9em;
+      font-style : italic ; 
+      font-weight: 500; 
+      max-width: 600px;
+      text-align: center;
+      font-family: $font1;
+    }
+    
+.btn{
+    background: $color2;
+    color : $black; 
+    padding: 10px;
+    width: 200px;
+    font-size : 1rem ; 
+    font-weight: 500;
+    border-radius : 200px; 
+  cursor: zoom-in;
+    text-transform: uppercase;
+    border : none ; 
+    font-weight: 600;
+
+    
+
+  }
+  
+
+}
+
+
+.container-one { 
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    background: white; 
+    margin : auto; 
+
+  .left-part{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+    border : 2px dashed $color2; 
+    margin: 20px;
+    height: 450px;
+    padding: 15px;
+
+    h2{ 
+        font-family: $font3; 
+        font-size : 1.4rem ; 
+        color : $color3; 
+        text-transform: capitalize; 
+        font-weight: 500;
+        text-align: center;
+        margin: 20px;
+
+
+   
+
+
+    }
+    h3 {
+        font-family: $font2 ; 
+        color : $black ; 
+        font-size : 1.6rem ; 
+
+        text-align: center;
+        font-weight: 500;
+        text-transform: uppercase;
+
+        &:hover{
+            color : $color2; 
+        }
+        
+    }
+    #ic3{
+    
+        font-size : 2rem ; 
+        color : $color1; 
+ 
+        padding: 15px;
+
+    }
+
+    p{
+        color : $black ; 
+        font-family: $font3;
+        font-size : 1.2rem; 
+        max-width: 100%;
+        letter-spacing: 2px ;
+        font-weight: 600;
+        line-height: 1.5em;
+        text-align: center;
+
+
+    }
+
+    .partner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        #wom { 
+            height: 150px;
+            width: 150px;
+            border-radius : 500px; 
+            border : 2px solid $color4; 
+            opacity : 0.7 ; 
+            transition : 0.3s ease ; 
+            margin: 10px;
+
+            &:hover {
+                opacity : 1; 
+                border : 2px solid $color1; 
+                transform : scale(1.70); 
+            }
+    
+        }
+        span{ 
+            font-size : 0.75rem ; 
+            font-weight: 600; 
+            color : $color1; 
+        }
+
+
+    }
+
+
+  }
+
+  .right-part{
+    background: url("/assets/img/sea.png") no-repeat center/cover ; 
+    
+
+  }
+
+}
+
+// end container one 
+
+.container-two {
+   position : relative; 
+   padding: 60px 0;
+   margin : 20px auto ; 
+
+   &::after{
+    content : " " ; 
+    position : absolute ; 
+    background: url("/assets/img/road.png") center  /cover ; 
+  height: 600px;
+  width: 100%;
+  left: 50% ; 
+  transform : translate(-50% , -50%);
+  bottom : -380px; 
+
+
+   }
+
+h2{
+    font-size : 2.4rem ; 
+    color : $black ; 
+    text-transform: capitalize;
+    text-shadow : 2px 2px 3px white ; 
+    font-family: $font3;
+
+}
+
+#ic2 {
+    font-size : 2rem ; 
+    color : red ; 
+    
+
+}
+ul {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    width: 50%;
+    min-width: 500px;
+    margin: 30px auto;
+
+   li {
+    font-size : 1.4rem ; 
+    font-weight: 600;
+    font-family: $font2;
+    border-bottom : 1px solid $color1 ; 
+    transition : 0.2s ease ; 
+
+  &:hover {
+   color : $color2; 
+background: $color1;
+padding: 10px;
+
+}
+
+
+   }
+
+    }
+
+.items { 
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    background: $white;
+    max-width: 900px;
+    width: 95%;
+    padding: 15px 0;
+    margin: 20px auto;
+    position : relative ; 
+    z-index : 2000; 
+    border-top  : 4px solid $color1 ; 
+    border-bottom : 4px solid $color1; 
+   
+    @media screen and (max-width : 1100px) {
+      display: grid;
+      grid-template-columns: 1fr;   
+    }
+
+
+    .item { 
+        display: grid;
+        grid-template-columns: 20% 80%;
+ padding: 30px 0;
+ margin: 0 20px;
+ border-bottom : 1px dashed $color3; 
+
+
+   .pictures{ 
+    height: 100px;
+    width: 100px;
+    border : 2px solid $color1; 
+    border-radius : 200px ; 
+    transition : 0.3s ease ; 
+   
+    &:hover {
+        transform : scale(1.35) ; 
+    }
+    
+
+
+    }
+
+    .text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        margin: 0 20px ; 
+
+        h4{
+            margin: 10px;
+            font-family: $font1;
+            font-weight: 600;
+            font-size: 1.2rem; 
+            
+         &:hover {
+            color : $color1; 
+
+         }
+
+        }
+        p{
+            font-size : 1.4rem ; 
+            font-weight: 500;
+            font-family: $font3;
+        }
+    }
+}
+
+
+
+
+
+
+}
+
+}
+// end container two
+
+// section form content 
+.infos { 
+
+padding: 100px 50px  30px;
+
+.form-infos {
+    display: grid;
+    grid-template-columns: 30% 70%;
+   width: 1050px;
+    margin : 30px auto; 
+    @media screen and (max-width: 1100px) {
+display: grid;
+grid-template-columns: 1fr;
+width: 800px;
+margin: 20px auto ; 
+                 }
+
+    .boxes { 
+        padding: 20px;
+        background: $color1;
+        border-top : 2px solid  $white; 
+        border-bottom  : 2px solid  $white; 
+    
+
+     .left-box{
+        padding:25px 0 ;
+        border : 2px dashed $color4 ; 
+
+
+        h3 {
+            font-size: 1.6rem ; 
+            font-family: $font3;
+            margin : 10px ; 
+            color : $color4 ;
+            text-transform: capitalize ; 
+
+
+        }
+
+    #trait {
+        height: 2px;
+     background: $white;
+        width: 70px;
+        display: block;
+        margin: 10px auto; 
+    }
+
+    h4{ 
+        font-size : 1.4rem ;
+        color : $white; 
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    #ic4 {
+        font-size : 1.8rem ; 
+        color : $color2; 
+        margin: 20px 0 ; 
+       
+
+    }
+
+    h6 {
+        color : $white ;
+        font-size : 1rem ; 
+        font-family: $font1;
+        margin-top : 0px; 
+        text-align: center;
+
+    }
+
+    p{
+        font-size : 0.7rem ; 
+        font-weight: 500;
+        font-family: $font2;
+        font-style : italic; 
+        text-align: center;
+        
+    }
+
+    em {
+        font-size : 0.9rem ; 
+        font-family: $font1;
+        color : $color3; 
+    }
+
+    
+    
+}
+}
+}
+
+
+
+
+
+
+.right-infos{
+    background: $color3;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    border-top : 2px solid $white;
+    border-bottom : 2px solid $white;
+
+    #ic5{
+        font-size : 2.5rem ; 
+        color : $white; 
+  
+     }
+
+ 
+  h2{
+    font-size: 2.5rem ; 
+    color : $white; 
+    font-weight: 600; 
+    font-family: $font3;
+    letter-spacing: 3px; 
+    margin-bottom: 20px;
+  }
+
+  h3{
+    font-family: $font2;
+    text-transform: uppercase;
+    font-size : 1.4rem; 
+    color : $black; 
+  }
+
+
+  .contact-form{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 20px 0;
+    margin: 20px auto;
+
+    #persons, #name ,#email, #phone , #reservation , #reserva-time {
+        border :  none ; 
+        margin: 20px;
+        padding: 5px;
+       }
+
+    input {
+        font-size : .75rem ; 
+    font-family: $font1;
+
+    &::placeholder{
+        color : $color1; 
+    }
+    }
+    
+}
+
+
+}
+
+
+
+#btn2{
+    background: $black;
+    color:$color1; 
+    font-weight: 600;
+    padding: 10px;
+    font-size : 0.9rem ;
+    cursor : pointer; 
+    border-radius : 300px; 
+    transition: 0.6s ease ; 
+    animation : anim 2s ease forwards ; 
+    @media screen and (max-width: 1100px) {
+    margin: 20px;
+                 }
+    
+    
+    &:hover{
+        background: $color1; 
+        color : $black; 
+    }
+    @keyframes anim {
+        to { 
+            background : $white; 
+            color : $color1; 
+            border : none; 
+        }
+    }
+
+}
+}
+// end section - infos 
+
+// begin section events
+.events { 
+    background: $color3;
+    padding: 60px 0;
+
+    //   events
+
+.anim-week {
+    background: $color4; 
+    padding: 20px;
+    border-top : 2px solid $color1 ;
+    border-bottom : 2px solid $color1 ; 
+    max-width: 1000px;
+    margin : auto ; 
+
+    h2{
+        font-family: $font3;
+        font-size: 3rem ; 
+    }
+    p{
+        font-family: $font1;
+        font-size : 1.4rem ;
+        background: $white ;
+        padding: 10px;
+        font-weight: 600;
+        border-radius : 500px; 
+    }
+
+   
+
+
+}
+.events-container {
+    display: grid;
+    grid-template-columns: repeat(2,45%);
+   max-width: 1050px; 
+   margin: 20px auto;
+   padding: 50px;
+   justify-content: space-around;
+   @media screen and (max-width: 1100px) {
+display: grid;
+grid-template-columns: 1fr;
+width: 800px;
+margin: 10px auto; 
+
+             }
+
+
+
+   .left-part {
+    background: url("/assets/img/surf.png") center/cover ; 
+    padding: 25px;
+  height: 500px;
+  position : relative; 
+  @media screen and (max-width: 1100px) {
+margin-bottom: 10px;
+             }
+
+  .event-details { 
+    background: $white;
+    height: 430px;
+    padding: 20px;
+
+  }
+
+
+    #surf { 
+        height: 150px;
+        width: 150px;
+        border-radius : 600px; 
+        border: 2px solid $black; 
+        position : absolute; 
+         top : 60%;
+         left : 50%; 
+         transform : translate(-50% , -50%);
+         transition : 0.5s ease-in; 
+         
+         
+         
+        }
+        
+        .ic7{
+            font-size: 0.8rem; 
+            font-weight: 400;
+            letter-spacing: 3px; 
+           
+         
+        }
+    .text-content{
+        background: $color4;
+        height: 80px;
+        width: 80px;
+        margin:- 20px  auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        p{
+            font-size: 2.5rem; 
+            font-weight: 600; 
+            font-family: $font1;
+
+
+        }
+        .month {
+            font-family: $font1; 
+            font-weight: 600;
+        }
+
+        
+        
+    }
+    
+    h3{
+        margin: 20px; 
+        font-family: $font1;
+        color : $color1 ; 
+        font-weight: 500;
+        text-transform: uppercase;
+        padding: 10px;
+    }
+    
+    .parOne{ 
+       padding: 2px;
+         font-size : 1.2rem ;   
+    }
+
+        #btn3{
+            background: $color1;
+            color : $black ; 
+            padding: 10px;
+            width: 200px;
+            position : absolute ; 
+            top: 80%;
+           transform : translate(-50%, -50% ); 
+           text-transform: uppercase;
+           font-weight: 400;
+        }
+   }
+ 
+
+
+
+}
+
+.right-part{ 
+    background: url("/assets/img/hip_hop.png") center/cover ; 
+    padding: 25px;
+  height: 500px;
+  position : relative; 
+  .event-details { 
+    background: $color4;
+    height: 430px;
+    padding: 20px;
+    
+    
+    #danse { 
+        height: 150px;
+        width: 150px;
+        border-radius : 600px; 
+        border: 2px solid $black; 
+        position : absolute; 
+         top : 60%;
+         left : 50%; 
+        transform : translate(-50% , -50%);
+        transition : 0.5s ease-in; 
+
+
+
+    }
+    .ic7{
+        font-size: 0.8rem; 
+        font-weight: 400;
+        letter-spacing: 3px; 
+       
+     
+    }
+
+    .text-content{
+        background: $color1;
+        height: 80px;
+        width: 80px;
+        margin:- 20px  auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        p{
+            font-size: 2.5rem; 
+            font-weight: 600; 
+            font-family: $font1;
+
+
+        }
+        .month {
+            font-family: $font1; 
+            font-weight: 600;
+        }
+        
+        
+    }
+    
+    h3{
+        margin: 20px; 
+        font-family: $font1;
+        color : $white ; 
+        font-weight: 500;
+        text-transform: uppercase;
+        padding: 10px;
+    }
+    .parOne{ 
+        padding: 2px;
+        font-size : 1.2rem ;   
+        color  :$black; 
+    }
+    
+    #btn4{
+    background: $color1;
+    color : $black ; 
+    padding: 10px;
+    width: 200px;
+    position : absolute ; 
+    top: 80%;
+   transform : translate(-50%, -50% ); 
+   text-transform: uppercase;
+   font-weight: 400;
+}
+  
+
+}
+
+
+
+}
+     
+
+
+}
+
+// section testomonial 
+.testomonial { 
+padding : 50px 0 200px ; 
+position : relative; 
+
+.customer-avis { 
+    padding : 70px ; 
+    background: $white;
+    width: 90%;
+    margin: 20px auto;
+    min-height: 300px; 
+    max-width: 1200px; 
+    line-height: 2.5em;
+
+    &:before{
+        content : " " ; 
+        position : absolute; 
+        background: url("/assets/img/alba.png") no-repeat top/cover ; 
+height: 140px;
+width: 140px;
+border-radius : 500px ;
+    top : 5px ; 
+    left : 50%; 
+    transform: translateX(-50%); 
+        
+    }
+
+    
+
+    &::after{
+        content : "" ; 
+        background: url("/assets/img/tenerife.png") center/cover ; 
+        min-height: 300px;
+        width: 100%;
+        position : absolute ; 
+        left : 0 ; 
+        bottom : 0; 
+        z-index : -1; 
+        opacity : 0.8; 
+
+
+    }
+    
+
+
+.text-customer{
+line-height: 2.5em;
+
+    &:before {
+        content: "❝";
+      }
+      &:after {
+        content: "❞";
+      }
+      &:before,
+      &:after {
+        font-size: 1.5rem;
+      }
+
+
+
+}
+
+h2{
+    font-size : 1.4rem ; 
+    font-family: $font1;
+    font-weight: 500;
+    color : $color1 ; 
+    text-align: center;
+    
+}
+
+span {
+    font-size : 1rem; 
+    font-style: italic;
+    font-weight: 600;
+
+    #it{
+        height: 50px ; 
+        width: 50px;
+        position : absolute ; 
+        left : 53% ; 
+        top : 47%;
+        @media screen and (max-width: 1100px) {
+           display: none;
+                     }
+        
+        
+    }
+
+}
+
+
+}
+
+
+
+
+
+
+
+}
+
+
+// media screen 
+@media screen and (max-width: 1080px) {
+    .container-one {
+        display: grid;
+        grid-template-columns: 1fr  ; 
+    }
+}

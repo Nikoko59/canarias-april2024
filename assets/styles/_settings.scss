@@ -1,0 +1,63 @@
+// import
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); 
+
+// fonts 
+$font1 : Inter; 
+$font2 : Montserrat ; 
+$font3 : Allura ; 
+
+// colors
+$color1: #4897d8; 
+$color2: #ffdb5c;
+$color3 : #fa6e59 ;
+$color4: #f8a055 ;
+$white : white ; 
+$black : black ; 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing : border-box; 
+
+}
+
+body { 
+    background: $color2 ;
+    font-family: $font1;
+    text-align: center;
+}
+
+li { 
+    list-style-type: none;
+}
+
+a , a:visited { 
+    color : $color1; 
+    text-decoration: none;
+    font-size: 1.7rem ; 
+    font-family: $font2;
+    font-weight: 600;
+ 
+}
+
+.btn{
+    background: $black;
+    color : $color4; 
+    padding: 10px;
+    width: 200px;
+    font-size : 1rem ; 
+    font-weight: 500;
+    border-radius : 200px; 
+    text-transform: uppercase;
+
+
+    &:hover {
+        transform: scale(1.05);
+      }
+
+    
+    
+
+  }
+
+
